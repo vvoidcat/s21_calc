@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "../src/core/s21_calc.h"
+#include "../src/s21_calc.h"
 #include "s21_testcases.h"
 
 #define COLOR_RED "\x1B[31m"
