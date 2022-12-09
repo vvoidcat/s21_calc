@@ -1,0 +1,65 @@
+\input texinfo
+@setfilename manual
+@settitle s21_calc
+@documentencoding UTF-8
+
+@titlepage
+@title
+@end titlepage
+
+@chapter @strong{ | About}
+This is a @strong{School 21} educational project - an implementation of a @strong{classic calculator} in @strong{C programming language}.
+The calculator takes a string with an arithmetical expression as input and computes the expression using the @strong{reverse Polish notation}.
+It can also plot a graph for the expression if a certain mode is chosen or a variable "x" is inserted into the equation.
+
+@strong{Supported mathematical operations and functions:}
+@enumerate
+@item
+unary plus | +a
+@item
+unary minus | -a
+@item
+addition | a + b
+@item
+substraction | a - b
+@item
+multiplication | a * b
+@item
+division | a / b
+@item
+power | a ^ b
+@item
+modulo | a % b
+@item
+parentheses | ()
+@item
+cosine | cos(x)
+@item
+sine | sin(x)
+@item
+tangent | tan(x)
+@item
+arc cosine | acos(x)
+@item
+arc sine | asin(x)
+@item
+arc tangent | atan(x)
+@item
+square root | sqrt(x)
+@item
+natural logarithm | ln(x)
+@item
+common logarithm | log(x)
+@end enumerate
+
+
+@chapter @strong{| Installation and usage:}
+
+@strong{s21_calc} has been developed as a desktop application for MacOS and Linux, and has been tested on @strong{MacOS (Big Sur)} and @strong{Ubuntu 20.04.4 LTS (Focal Fossa)}, @strong{Ubuntu 20.04.1 LTS (Jammy Jellyfish)}, both Desktop and Server images. 
+
+To compile, run "make" from the root folder of the project in the terminal. On Linux OS, all the required package dependencies can be installed with @strong{linux_package_installer.sh} script located in the @strong{utils/} folder of the project.
+
+
+For additional usage instructions, run the compiled application with the @strong{[-h]} option.
+
+@bye
