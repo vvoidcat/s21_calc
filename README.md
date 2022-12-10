@@ -2,7 +2,7 @@
 
 **s21_calc** is a **School 21** educational project - a **C programming language** console application implementing an extended version of the simple **calculator**. It also contains an implementation of a **stack** data structure used to compute the inserted expressions in the **reverse Polish notation**.
 
-The application is able to calculate arbitrary bracketed arithmetic expressions with integers and decimal numbers and plot a simple 20x20 graph of a function if a variable *x* is inserted into the equation or if the program is run with the ```--graph``` option.
+The application is able to calculate arbitrary bracketed arithmetic expressions with integers and decimal numbers and plot a simple graph (-10 to 10 on X axis, -10 to 10 on Y axis, size of step 1) of a function if a variable *x* is inserted into the equation or if the program is run with the ```--graph``` option.
 
 The user input is restricted to 255 characters (all exceeding characters will be force-cut). The calculation is performed after the ```[=]``` or ```[enter]``` keys are pressed and the input string is verified as correct.
 
