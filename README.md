@@ -1,8 +1,11 @@
 # s21_calc
 
-## About
+**s21_calc** is a **School 21** educational project - a **C programming language** console application implementing an extended version of the simple **calculator**. It also contains an implementation of a **stack** data structure used to compute the inserted expressions in the **reverse Polish notation**.
 
-**s21_calc** is a **School 21** educational project - a **C programming language** console implementation of the usual **calculator** and a **stack** data structure used to compute the expressions in the **reverse Polish notation**.
+The application is able to calculate arbitrary bracketed arithmetic expressions with integers and decimal numbers and plot a simple 20x20 graph of a function if a variable *x* is inserted into the equation or if the program is run with the ```[ --graph ]``` option.
+
+The user input is restricted to 255 characters (all exceeding characters will be force-cut). The calculation is performed after the ```[=]``` or ```[enter]``` keys are pressed and the input string is verified as correct.
+
 
 ## Supported arithmetic operations and functions
 
@@ -33,7 +36,11 @@
 | common logarithm | log(x) |
 
 ## Note
-- utils
-- tested modules, coverage
-- valgrind tests
+- the program was tested on **Mac OS** (Big Sur) and **Linux** (Ubuntu 20.04.4 LTS (Focal Fossa) and Ubuntu 22.04.1 LTS (Jammy Jellyfish), both Desktop and Server images);
+- unit-tests made with the Check library cover **more than 90%** of each module related to string parsing and calculation (**core**, **math** and **graphs** modules);
+- unit-tests compare the calculated equation results to the results provided by the Google online calculator;
+- memory tests with *valgrind* show **no leaks**
 
+To compile the program, run ```make``` in the terminal. On Linux OS, all the required compilation dependencies (*make*, *gcc*, etc.) can be installed with the ```./linux_package_installer.sh``` script located in the **utils/** folder of the project.
+
+The main executable file will be placed in **build/s21_calc-build-release** directory after successful compilation.
