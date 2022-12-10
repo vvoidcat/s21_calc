@@ -29,13 +29,7 @@ void print_help() {
   printf("usage: ./s21_calc [ options ]\n\n");
   printf("options:\n");
   printf("\t-h --help\t-  displays help;\n");
-  printf(
-      "\t-i --gui\t-  launches the app with the graphical user interface "
-      "(default);\n");
-  printf("\t-t --terminal\t-  launches the app in the terminal;\n");
-  printf(
-      "\t-g --graph\t-  enables graph plotting mode when the [ -t ] option is "
-      "also set.\n");
+  printf("\t-g --graph\t-  enables graph plotting mode.\n");
 }
 
 void print_input(char *line) {
